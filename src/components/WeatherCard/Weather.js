@@ -9,7 +9,7 @@ const url =
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "4950bc2857mshc4201d2fd651488p188521jsnf4cea1e3e9bc",
+    "X-RapidAPI-Key": process.env.REACT_APP_WEATHER_API_KEY,
     "X-RapidAPI-Host": "dark-sky.p.rapidapi.com",
   },
 };
