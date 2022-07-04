@@ -12,11 +12,11 @@ you get the point.
 
 ## link
 
-🔗 [this will be a link one day](https://dashboard.thingsgavdoes.com)
+🔗 [the dashboard in action](https://house-dashboard.thingsgavdoes.com)
 
 ## screenshots
 
-![Writing](https://unsplash.com/photos/VBPzRgd7gfc)
+![Weather Card](![image](https://user-images.githubusercontent.com/19315682/177154471-20ee57d3-74d7-4446-91a8-e6e5c871f3eb.png))
 
 ## tech
 
