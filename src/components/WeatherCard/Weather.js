@@ -39,12 +39,16 @@ export function Weather() {
     getData();
   }, [summary, feelsLike, currently, wind, weatherData]);
   return (
-    <div className="weather">
-      <h3>The weather in Leith is: {summary}</h3>
-
-      <FeelsLike value={feelsLike}></FeelsLike>
-      <Currently value={currently}></Currently>
-      <Wind value={wind}></Wind>
+    <div className="max-w-md mx-auto bg-white rounded-xl space-y-2 p-3">
+      <div className="subData text-md  flex space-x-6">
+        <Currently value={currently}></Currently>
+        <FeelsLike value={feelsLike}></FeelsLike>
+        <Wind value={wind}></Wind>
+      </div>
+      <div>
+        <p className="text-l font-medium">📍Leith - {new Date().toDateString()}</p>
+        <p className="italic lowercase">{summary}</p>
+      </div>
     </div>
   );
 }

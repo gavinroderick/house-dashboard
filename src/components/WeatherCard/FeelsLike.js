@@ -1,6 +1,6 @@
 import React from "react";
 export class FeelsLike extends React.Component {
   render() {
-    return <h5>Feels like: {this.props.value}°C</h5>;
+    return <p title="feels like">🤔{this.props.value}°C</p>;
   }
 }
