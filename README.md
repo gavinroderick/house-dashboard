@@ -1,4 +1,4 @@
-# house-dashboard
+# house-dashboard [![Netlify Status](https://api.netlify.com/api/v1/badges/e16a8374-f714-4e1e-9c41-a9a2ae5ba032/deploy-status)](https://app.netlify.com/sites/house-dashboard/deploys)
 
 sometimes, i wanna know when the next bus is.
 
@@ -8,41 +8,43 @@ or see if it's too windy to cycle.
 
 you get the point.
 
----
+## 🔗 link
 
-## link
+[hosted on my thingsgavdoes domain with netlify](https://house-dashboard.thingsgavdoes.com)
 
-🔗 [the dashboard in action](https://house-dashboard.thingsgavdoes.com)
+## 📷 screenshots
 
-## screenshots
+**Weather Card**
 
-![Weather Card](![image](https://user-images.githubusercontent.com/19315682/177154471-20ee57d3-74d7-4446-91a8-e6e5c871f3eb.png))
+![image](https://user-images.githubusercontent.com/19315682/177154471-20ee57d3-74d7-4446-91a8-e6e5c871f3eb.png)
 
-## tech
+## ⚒️ tech
 
-react
-npm
-JSON?  
-markdown?
+[create-react-app](https://reactjs.org/)
+[npm](https://npm.org)
+[tailwindcss](https://tailwindcss.com/)
 
-## run it yourself
 
-clone it
-run it
-
-## the story for my blog
+## 📜 the story for my blog
 
 blah blah nobody cares etc...
 
-## project status
+## ✅ project status / todo
 
-house-dashboard is just getting started bay-bee
+- [X] weather
+- [ ] pollen count
+- [ ] expanded wind speed/direction
+- [ ] next bus time at my local stop
+- [ ] bin day?
+- [ ] cat weight tracker
+- [ ] calendar reminders?
 
-## redits
+## 💪 credits
 
 @gavinroderick
-his supervisor (this cat -->)
 
-## License
+his supervisor (this cat -->) ![image](https://user-images.githubusercontent.com/19315682/177156198-2e7d8927-c3d9-4ab7-a54d-a6a653cefbab.png)
+
+## 📄 License
 
 MIT license @ Gavin Roderick
