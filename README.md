@@ -1,4 +1,5 @@
 # house-dashboard [![Netlify Status](https://api.netlify.com/api/v1/badges/e16a8374-f714-4e1e-9c41-a9a2ae5ba032/deploy-status)](https://app.netlify.com/sites/house-dashboard/deploys)
+> *info I need for the day, at a glance*
 
 sometimes, i wanna know when the next bus is.
 
@@ -20,14 +21,14 @@ you get the point.
 
 ## ⚒️ tech
 
-[create-react-app](https://reactjs.org/)
-[npm](https://npm.org)
-[tailwindcss](https://tailwindcss.com/)
+- [create-react-app](https://reactjs.org/)
+- [npm](https://npm.org)
+- [tailwindcss](https://tailwindcss.com/)
 
 
-## 📜 the story for my blog
+## 📜 the story
+I wrote a blog post about this project [here!](https://blog.thingsgavdoes.com/my-next-job-is-in-cyber/)
 
-blah blah nobody cares etc...
 
 ## ✅ project status / todo
 
