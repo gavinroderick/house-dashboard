@@ -14,40 +14,42 @@ const options = {
   },
 };
 
+const initialWeatherData = {
+  summary: 0,
+  feelsLike: 0,
+  currently: 0,
+  wind: 0,
+};
+
 export function Weather() {
-  const [summary, setSummary] = useState([]);
-  const [feelsLike, setFeelsLike] = useState([]);
-  const [currently, setCurrently] = useState([]);
-  const [wind, setWind] = useState([]);
-  const [weatherData, setData] = useState([]);
-
-  const parseData = (raw) => {
-    setSummary(raw.currently.summary);
-    setFeelsLike(raw.currently.apparentTemperature);
-    setCurrently(raw.currently.temperature);
-    setWind(raw.currently.windSpeed);
-    setData(raw.currently);
-  };
-
+  const [weatherData, setWeatherData] = useState({ initialWeatherData });
   useEffect(() => {
-    const getData = async () => {
-      await fetch(url, options)
-        .then((res) => res.json())
-        .then((json) => parseData(json))
-        .catch((err) => console.error("error:" + err));
-    };
-    getData();
-  }, [summary, feelsLike, currently, wind, weatherData]);
+    fetch(url, options)
+      .then((res) => res.json())
+      .then((json) => {
+        setWeatherData({
+          summary: json.currently.summary,
+          feelsLike: json.currently.apparentTemperature,
+          currently: json.currently.temperature,
+          wind: json.currently.windSpeed,
+        });
+      })
+      .catch((err) => console.error("error:" + err));
+  }, []);
+
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl space-y-2 p-3">
       <div className="subData text-md  flex space-x-6">
-        <Currently value={currently}></Currently>
-        <FeelsLike value={feelsLike}></FeelsLike>
-        <Wind value={wind}></Wind>
+        <Currently value={weatherData.currently}></Currently>
+        <FeelsLike value={weatherData.feelsLike}></FeelsLike>
+        <Wind value={weatherData.wind}></Wind>
       </div>
       <div>
-        <p className="text-l font-medium">📍Leith - {new Date().toDateString()}</p>
-        <p className="italic lowercase">{summary}</p>
+        <p className="text-l font-medium">
+          {new Date().toDateString()} -{" "}
+          <span className="italic lowercase">{weatherData.summary}</span>
+        </p>
+        <p>📍Leith</p>
       </div>
     </div>
   );
